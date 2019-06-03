@@ -4,6 +4,10 @@ namespace PolymorphismExercises
 {
     public class OracleConnection : DbConnection
     {
+        public OracleConnection(string connectionString) : base(connectionString)
+        {
+        }
+
         public override void CloseConnection()
         {
             Console.WriteLine("Oracle connection closed!");
