@@ -6,6 +6,7 @@ namespace PolymorphismExercises
     {
         public OracleConnection(string connectionString) : base(connectionString)
         {
+            Timeout = new TimeSpan(0, 1, 45);
         }
 
         public override void CloseConnection()

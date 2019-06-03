@@ -6,6 +6,7 @@ namespace PolymorphismExercises
     {
         public SqlConnection(string connectionString) : base(connectionString)
         {
+            Timeout = new TimeSpan(0, 2, 32);
         }
 
         public override void CloseConnection()
