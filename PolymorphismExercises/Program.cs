@@ -13,7 +13,11 @@ namespace PolymorphismExercises
             var oracle = new OracleConnection("12345");
             var sql = new SqlConnection("67890");
 
-            Console.WriteLine(oracle.Timeout);
+            oracle.OpenConnection();
+            oracle.CloseConnection();
+
+            sql.OpenConnection();
+            sql.CloseConnection();
         }
     }
 }

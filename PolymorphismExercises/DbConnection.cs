@@ -4,12 +4,12 @@ namespace PolymorphismExercises
 {
     public abstract class DbConnection
     {
-        public string ConnectionString;
+        public string _connectionString;
         public TimeSpan Timeout;
 
         public DbConnection(string connectionString)
         {
-            ConnectionString = connectionString;
+            _connectionString = connectionString;
         }
 
         public abstract void OpenConnection();

@@ -12,11 +12,13 @@ namespace PolymorphismExercises
         public override void CloseConnection()
         {
             Console.WriteLine("Oracle connection closed!");
+            Console.WriteLine(DateTime.Now);
         }
 
         public override void OpenConnection()
         {
             Console.WriteLine("Oracle connection opened!");
+            Console.WriteLine(DateTime.Now);
         }
     }
 }
