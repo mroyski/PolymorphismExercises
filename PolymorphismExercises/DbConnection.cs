@@ -4,8 +4,8 @@ namespace PolymorphismExercises
 {
     public abstract class DbConnection
     {
-        public string _connectionString;
-        public TimeSpan Timeout;
+        public string _connectionString { get; set; }
+        public TimeSpan Timeout { get; set; }
 
         public DbConnection(string connectionString)
         {
