@@ -18,6 +18,14 @@ namespace PolymorphismExercises
 
             sql.OpenConnection();
             sql.CloseConnection();
+
+            Console.WriteLine();
+
+            var commandOracle = new DbCommand(oracle, "Execute Oracle Command.");
+            commandOracle.Execute();
+
+            var commandSql = new DbCommand(sql, "Execute Sql Command.");
+            commandSql.Execute();
         }
     }
 }
