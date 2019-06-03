@@ -10,6 +10,8 @@ namespace PolymorphismExercises
     {
         static void Main(string[] args)
         {
+            var oracle = new OracleConnection();
+            var sql = new SqlConnection();
         }
     }
 }
